@@ -13,14 +13,21 @@ public class MainController {
 	private AccessService accessService;
 	
 	
-	@GetMapping("/")
-	public String index() {
+	@GetMapping("/admin")
+	public String admin() {
 		return "main";
 	}
+	
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+	
 	@GetMapping("/writeReview")
 	public String writeReview() {
 		return "review/writeReview";
 	}
+	
 	@GetMapping("/statistic")
 	public String statisticEx() {
 		return "statistic/statisticEx";
