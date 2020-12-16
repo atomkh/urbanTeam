@@ -15,12 +15,12 @@ public class RsvController {
 	@Autowired 
 	private RsvService rsvService; 
 	
-	@GetMapping("/rsv")
+	@GetMapping("/rsvInsert")
 	public String index() {
 		return "rsv/rsvTime";
 	}
 	
-	@PostMapping("/rsv")
+	@PostMapping("/rsvInsert")
 	public String index2(Rsv rsv, Model model) {
 		System.out.println(rsv.getRsvDate() + " <-- 예약날짜");
 		System.out.println(rsv.getStartTime() + " <-- 시작시간");
