@@ -20,8 +20,12 @@ public class StatisticController {
 	@GetMapping("/accessStat")
 	public String statisticEx(Model model, @RequestParam(name="result", required = false) String result) {
 		List<Access> accessList = accessService.getAccessRecord();
+		int[] accessCount = accessService.getAccessCount();
+		accessService.getBrowserTop4();
 		model.addAttribute("title", "접속 목록");
 		model.addAttribute("accessList", accessList);
+		model.addAttribute("accessTotalCount", accessCount[0]);
+		model.addAttribute("accessOtherCount", accessCount[1]);
 		if(result != null) model.addAttribute("result", result);
 		
 		return "statistic/statisticEx";
