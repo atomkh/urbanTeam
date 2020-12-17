@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.urban.spatium.mapper.StoreMapper">
+
+<select id = "storeList" resultType="Store">
+SELECT 
+	storeCode
+	, storeId
+	, storeName
+	, storeRepresentative
+	, storeNumber
+	, storeBusinessType
+	, storeAddress
+	, storeIntroduction
+	, storeEmail
+	, storePhone
+	, storeAccountNumber
+	, storePaymentMethod
+	, storeImage
+	, storeLevel
+FROM
+	tbStore;
+</select>
+
+</mapper>
