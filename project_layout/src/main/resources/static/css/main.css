@@ -1,4 +1,4 @@
-/*
+/* /*
       Created by Keith Donegan of Code-Sucks.com
 	  
 	  E-Mail: Keithdonegan@gmail.com
@@ -7,7 +7,7 @@
 	  but it would be greatly appreciated if you gave a link
 	  back to http://www.code-sucks.com
 	  
-*/
+/*
 
 * { padding: 0; margin: 0; 
 font-family: 'NanumGothic', sans-serif !important;}
@@ -120,20 +120,7 @@ body{
 
 
 
-.footer-logo{
-	max-width: 100%;
-    margin-left: 250px;
-    position: relative;
-    max-height: 50px;
-    margin: auto;
-    margin-bottom: 2em;
-}
-.footer-null-logo{
-	max-width: 100%;
 
-    max-height: 50px;
-
-}
 
 
 .inner_width{
@@ -200,3 +187,19 @@ body {
 
 
 
+ */
+ 
+ .footer-logo{
+	max-width: 100%;
+    margin-left: 250px;
+    position: relative;
+    max-height: 50px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+.footer-null-logo{
+	max-width: 100%;
+
+    max-height: 100px;
+
+}
