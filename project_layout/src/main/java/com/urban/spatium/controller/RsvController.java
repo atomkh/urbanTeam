@@ -36,6 +36,18 @@ public class RsvController {
 		rsvService.insertTbRsv(rsv);
 		
 		
-		return "rsv/rsvTime";
+		return "rsv/rsvInsert";
 	}
+	
+	@GetMapping("/rsvList")
+	public String rsvList() {
+		return "rsv/rsvList";
+	}
+	
+	@GetMapping("/rsvCancelList")
+	public String rsvCancelList() {
+		return "rsv/rsvCancelList";
+	}
+	
+	
 }
