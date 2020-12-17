@@ -17,7 +17,7 @@ public class RsvController {
 	
 	@GetMapping("/rsvInsert")
 	public String index() {
-		return "rsv/rsvTime";
+		return "rsv/rsvInsert";
 	}
 	
 	@PostMapping("/rsvInsert")
@@ -48,6 +48,5 @@ public class RsvController {
 	public String rsvCancelList() {
 		return "rsv/rsvCancelList";
 	}
-	
 	
 }
